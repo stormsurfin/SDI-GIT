@@ -13,7 +13,17 @@ My bulleted break down is as follows:
 	⁃	Canyonlands National Park, Arches National Park, Dead Horse State Park, Drive along Colorado River to and from Moab
 */
 
-//While Loop
+// Procedure
+// On the day we arrived, the wind was blowing hard and there was dust everywhere, making sightseeing impossible.
+
+var dust = true;
+
+if (dust === true)
+console.log("The dust is horrible, we should go see a movie!");
+if (dust === false)
+console.log("The dust has cleared, let's go play!");
+
+// While Loop
 
 var day = 12;
 
@@ -43,7 +53,7 @@ var visitAttraction = function(whatAttraction) {
     console.log(hikers[0] + " wants to see the " + attractionName + " we have " + milesHiked + " miles to hike.");
 		for (var miles = 0; miles < milesHiked; miles += .5) {
 			var milesRemain = milesHiked - miles;
-				console.log("We have " + milesRemain + " miles left. " + miles + " miles have past.");
+				console.log(miles + " miles have past, we have " + milesRemain + " miles left.");
             }
             console.log("What a great sight to see, visiting " + attractionName + "!");
         };
