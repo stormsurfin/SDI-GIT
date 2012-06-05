@@ -31,7 +31,26 @@ for (var lux = 400; lux > 1; lux/=2) {
 };
 console.log("Its dark out, lets go back to camp.");
 
+// Array Function
 
+var attractions = ["Delicate Arch", "Devils Garden", "Landscape Arch", "Double Arch"],
+	milesAway = [3, 5, 1.5, 1],
+	hikers = ["Janina", "Abe"];
+
+var visitAttraction = function(whatAttraction) {
+	var attractionName = attractions[whatAttraction],
+	milesHiked = milesAway[attractionNumber];
+    console.log(hikers[0] + " wants to see the " + attractionName + " we have " + milesHiked + " miles to hike.");
+		for (var miles = 0; miles < milesHiked; miles += .5) {
+			var milesRemain = milesHiked - miles;
+				console.log("We have " + milesRemain + " miles left. " + miles + " miles have past.");
+            }
+            console.log("What a great sight to see, visiting " + attractionName + "!");
+        };
+
+        for (var attractionNumber = 0; attractionNumber < attractions.length; attractionNumber++) {
+            visitAttraction(attractionNumber); 
+        };
 
 
 /*var offWork = true;
