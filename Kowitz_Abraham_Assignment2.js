@@ -52,7 +52,7 @@ var hike = function() {var dayHours = 12;
 		console.log("The sun is getting low, lets go find a spot to watch the sunset!");
 	};
 	
-console.log(hike);
+hike();
 
 // For Loop
 // lux is a measurement of light, 400 lux is the intensity at sunset, 1 lux is the amount of light during a full moon
@@ -87,14 +87,16 @@ var visitAttraction = function(whatAttraction) {
 // Steps to put the Jeep in 4 low
 
 
-
+console.log("Time to use 4wd for the first time!");
 var fourLow = function() {
-	var roll = "Get the Jeep moving above 5 mph.";
-	var neutral = "Put it in Neutral.";
-	var shift = "Move the shifter down then to the right and down again.";
+	var roll = "Get the Jeep moving above 5 mph.  ";
+	var neutral = "Put it in Neutral.  ";
+	var shift = "Move the 4wd shifter down then to the right and down again.  ";
 	var drive = "Put it back in Drive.";
 	console.log(roll + neutral + shift + drive);
 	};
+
+fourLow();
 	
 
 /*var offWork = true;
