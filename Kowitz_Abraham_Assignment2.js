@@ -25,24 +25,32 @@ console.log("The dust has cleared, let's go play!");
 
 // Boolean Function
 
-var goodSunset = function() {
-	var dustSettlesAtSunset = true;
-	var prettySunset = true;
+var supplies = function() {
+	var packed = true
+	var offWork = true
+	var abeHungry = true
+	var janinaHungry = false
+	var thirsty = true
 	
-	if(dustSettlesAtSunset === true)
-		{
-		console.log("Lets go to the top of the canyon to see the sunset!")
-		} else {
-	if(prettySunset === true)
-		{
-		console.log("We'll take lots of great sunset pictures.")
-		}
+	if (packed && offWork) {
+		console.log("We're packed and ready to leave.");
+	} else {
+		console.log("We can't leave quite yet.");
+	}    
+	if (abeHungry || janinaHungry) {
+		console.log("We'll stop and eat on the hiking trail.");
+	} else {
+		console.log("Our food is packed, we can eat whenever we want.")
+	}	
+	if (!thirsty) {
+		console.log("Be sure to drink plenty of water.");
+	} else {
+		console.log("We're in the desert, no skimping on water!")
 	}
 };
-
+supplies();
 
 // While Loop
-
 
 var hike = function() {var dayHours = 12;
 	while (dayHours > 1) {
@@ -86,7 +94,6 @@ var visitAttraction = function(whatAttraction) {
 // Sting Function
 // Steps to put the Jeep in 4 low
 
-
 console.log("Time to use 4wd for the first time!");
 var fourLow = function() {
 	var roll = "Get the Jeep moving above 5 mph.  ";
@@ -96,36 +103,6 @@ var fourLow = function() {
 	console.log(roll + neutral + shift + drive);
 	};
 
-fourLow();
-	
+fourLow();	
 
-/*var offWork = true;
-	delicateArchMi = 3,
-	devilsGardenMi = 5,
-	landscapeArchMi = 1.6,
-	doubleArchMi = .8,
-	milesToTired = 10,
-	groggy = false,
-	offTrailTime = 1900,
-	attractions = ["canyonlands", "arches", "deadHorse", "drive along colorado river"];
-
-if (offWork === true) {
-	console.log('We\'re going to Moab for Memorial Day weekend!');
-} else {
-	console.log("I have to work Memorial Day weekend.");
-};
-	
-// Our plans for the weekend
-
-console.log ("Our plan is to enjoy" + attractions + " this weekend!");
-	
-//On our first day we hike all around Arches National Park
-
-if (milesToTired <= delicateArchMi + devilsGardenMi + landscapeArchMi + doubleArchMi) {
-	console.log("What a long day, we should drive down Shaffer Road.");
-} else {
-	console.log("Let's find another hike to go on!");
-};
-	
-*/
 
